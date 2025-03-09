@@ -16,7 +16,7 @@
         <p>Name: {{ $data['name'] }}</p>
         <p>Email: {{ $data['email'] }}</p>
         <p>Photo:</p>
-        <img src="{{ asset(str_replace('public', 'storage', $data['photo_path'])) }}" width="200" alt="Profile Photo">
+        <img src="{{ asset('storage/' . $data['photo_path']) }}" width="200" alt="Profile Photo">
     </div>
 </body>
 </html>
